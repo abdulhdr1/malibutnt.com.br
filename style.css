@@ -1,0 +1,136 @@
+.navbar {
+    height: 10vh;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+.carousel-item {
+    height: 90vh;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.container-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.text-justify {
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.product-photos {
+    width: 33.333%;
+    overflow: visible;
+}
+
+.product-photos:hover {
+    -webkit-transform: scale(1.5);
+    /* or some other value */
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+img {
+    transition: transform 0.25s ease;
+}
+
+img[data-src] {
+    opacity: 0;
+    transform: scale(0);
+}
+
+img[src] {
+    opacity: 1;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+img:hover {
+    -webkit-transform: scale(1.5);
+    /* or some other value */
+    transform: scale(1.1);
+}
+
+.non-galery-img:hover {
+    transform: scale(1);
+}
+
+@media (max-width: 992px) {
+    .photos {
+        width: 75%;
+        margin: 3rem auto;
+    }
+    .photos-row {
+        display: block;
+        text-align: center;
+    }
+    #banner-carousel {
+        display: none;
+    }
+    .contact {
+        padding: 28px 0;
+        text-align: center;
+    }
+}
+
+.contact {
+    color: #dee2e6;
+}
+
+.products-text {
+    line-height: 3;
+}
+
+.contact-a:hover {
+    color: #ffbe0b;
+    transition: 300ms;
+}
+
+.h-90 {
+    height: 90vh;
+}
+
+.contact-li {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto 0;
+}
+
+iframe {
+    margin: 15px 0 0 0;
+}
+
+.a-home {
+    text-decoration: none;
+    color: #57595c;
+}
+
+.a-home:hover {
+    color: #ffbe0b;
+    transition: 300ms;
+}
+
+
+/* 
+@media only screen and (min-width: 576px) {
+    .col-sm-12 {
+        display: block;
+    }
+} */
