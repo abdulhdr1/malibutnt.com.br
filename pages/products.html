@@ -5,62 +5,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Malibu - TNT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link href="../style.css" rel="stylesheet"></link>
+    <link href="./../css/style.css" rel="stylesheet"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" href="../images/icons/icon_logo.png" type="image/x-icon" />
+
 </head>
 
 <body onload="loadImages()">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-second">
         <div class="navbar-content container-fluid w-75">
             <!-- logomarca  -->
             <a href="../index.html">
-                <img class="navbar-brand" src="" alt="logo" />
+                <img class="navbar-brand non-galery-img" src="../images/logo-malibu.png" alt="logo" loading="eager" />
             </a>
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-options" aria-controls="navbar-options" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <span class="navbar-toggler-icon d-flex"
+            ><i class="fas fa-bars fa-lg my-auto mx-auto"></i
+          ></span>
+        </button>
             <!-- itens do menu de navegação -->
             <div class="collapse navbar-collapse" id="navbar-options">
-                <ul class="navbar-nav mb-2 ms-auto">
-                    <li class="nav-item mx-3"><a href="about.html" class="nav-link">Sobre</a></li>
-                    <li class="nav-item mx-3"><a href="products.html" class="nav-link">Produtos</a></li>
+                <ul class="navbar-nav my-auto ms-auto">
+                    <li class="nav-item mx-3 d-flex justify-content-between">
+                        <a href="about.html" class="nav-link text-uppercase">Sobre nós
+                <i class="fas fa-building ps-3"></i>
+              </a>
+                    </li>
+                    <hr class="navbar-hr" />
+                    <li class="nav-item mx-3 d-flex justify-content-between">
+                        <a href="products.html " class="nav-link text-uppercase">Produtos
+                <i class="fas fa-th ps-3"></i>
+              </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <hr class="m-0" style="height: 2px;">
     <!-- Catálogo -->
-    <div class="container-fluid py-5" style="background-color: #e9ecef">
-        <div class="col-lg-9 mx-auto">
-            <div class="galery">
-                <div class="row text-center">
-                    <h1 class="col-lg-12 text-uppercase">Galeria</h1>
-                    <p class="container-text py-5 my-5  px-0 products-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, in aperiam itaque accusantium, quas soluta sunt ad, quaerat harum deleniti qui! Ipsa voluptatum rem repellat exercitationem dolor similique eius! Nostrum.</p>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="galery p-0">
+                <div class="col-lg-12 bg-second">
+                    <div class="col-lg-9 mx-auto">
+                        <div class="row">
+                            <h1 class="col-lg-12 text-uppercase pt-5" id="catalog">Catálogo</h1>
+                            <p class="col-lg-9 container-text py-5 products-text mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, in aperiam itaque accusantium, quas soluta sunt ad, quaerat harum deleniti qui! Ipsa voluptatum rem repellat exercitationem dolor similique eius! Nostrum.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row photos-row">
-                    <img class="col-lg-3 ps-0 me-auto my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 pe-0 ms-auto my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                <div class="row bg-second">
+                    <div class="row">
+                        <div class="mx-auto p-0 photos-row text-start">
+                            <div class="col-lg-12 products-text">
+                                <h1 class="py-3 mb-0 text-uppercase">Brancos</h1>
+                                <p class="product-row-text">Gramatura 15 à 150</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="mx-auto p-0 photos-row">
+                            <img class="col-lg-3 ps-0 my-3 product-photos img-scroll" data-src="../images/products/img9.png" alt="">
+                            <img class="col-lg-3 my-3 product-photos img-scroll" data-src="../images/products/img11.jpeg" alt="">
+                            <img class="col-lg-3 pe-0 my-3 product-photos img-scroll" data-src="../images/products/img4.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="row photos-row">
-                    <img class="col-lg-3 ps-0 me-auto my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 pe-0 ms-auto my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                <div class="row bg-third ">
+                    <div class="row">
+                        <div class="mx-auto p-0 photos-row text-start text-second ">
+                            <div class="col-lg-12 products-text">
+                                <h1 class="py-3 mb-0 text-uppercase">Coloridos</h1>
+                                <p class="product-row-text">Gramatura 15 à 150</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mx-auto p-0 photos-row ">
+                            <img class="col-lg-3 ps-0 my-3 product-photos img-scroll" data-src="../images/products/img12.png" alt="">
+                            <img class="col-lg-3 my-3 product-photos img-scroll" data-src="../images/products/img2.jpg" alt="">
+                            <img class="col-lg-3 pe-0 my-3 product-photos img-scroll" data-src="../images/products/img13.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="row photos-row">
-                    <img class="col-lg-3 ps-0 me-auto my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 pe-0 ms-auto my-3 product-photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                <div class="row bg-fifth">
+                    <div class="row">
+                        <div class="mx-auto p-0 photos-row text-start text-second">
+                            <div class="col-lg-12 products-text">
+                                <h1 class="py-3 mb-0 text-uppercase">Pretos</h1>
+                                <p class="product-row-text">Gramatura 15 à 150</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mx-auto p-0 photos-row ">
+                            <img class="col-lg-3 my-3 product-photos img-scroll" data-src="../images/products/img10.png" alt="">
+                            <img class="col-lg-3 pe-0 my-3 product-photos img-scroll" data-src="../images/products/img18.jpg" alt="">
+                            <img class="col-lg-3 ps-0 my-3 product-photos img-scroll" data-src="../images/products/img5.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Contato -->
     <div class="container-fluid p-0 contact" style="background-color: #6c757d">
@@ -86,11 +140,12 @@
 
 <script>
     function loadImages() {
-        document.querySelectorAll('img').forEach((img, index) => {
+        document.querySelectorAll('.img-scroll').forEach((img, index) => {
             img.src = img.getAttribute('data-src')
         })
     }
 </script>
+
 
 </html>
 

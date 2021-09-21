@@ -5,152 +5,218 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Malibu - TNT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link href="style.css" rel="stylesheet"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="icon" href="/images/icons/icon_logo.png" type="image/x-icon" />
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-second">
         <div class="navbar-content container-fluid w-75">
             <!-- logomarca  -->
-            <a href="index.html">
-                <img class="navbar-brand" src="" alt="logo" />
+            <a href="#">
+                <img class="navbar-brand non-galery-img" src="./images/logo-malibu.png" alt="logo" loading="eager" />
             </a>
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-options" aria-controls="navbar-options" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <span class="navbar-toggler-icon d-flex"
+            ><i class="fas fa-bars fa-lg my-auto mx-auto"></i
+          ></span>
+        </button>
             <!-- itens do menu de navegação -->
             <div class="collapse navbar-collapse" id="navbar-options">
-                <ul class="navbar-nav mb-2 ms-auto">
-                    <li class="nav-item mx-3"><a href="pages/about.html" class="nav-link">Sobre</a></li>
-                    <li class="nav-item mx-3"><a href="pages/products.html" class="nav-link">Produtos</a></li>
+                <ul class="navbar-nav my-auto ms-auto">
+                    <li class="nav-item mx-3 d-flex justify-content-between">
+                        <a href="pages/about.html" class="nav-link text-uppercase">Sobre nós
+                <i class="fas fa-building ps-3"></i>
+              </a>
+                    </li>
+                    <hr class="navbar-hr" />
+                    <li class="nav-item mx-3 d-flex justify-content-between">
+                        <a href="pages/products.html " class="nav-link text-uppercase">Produtos
+                <i class="fas fa-th ps-3"></i>
+              </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Slide carousel -->
-    <div id="banner-carousel" class="carousel slide" data-bs-ride="carousel">
+    <!--     <div id="banner-carousel " class="carousel slide" data-bs-ride="carousel ">
         <div class="carousel-inner">
-            <div class="carousel-item active bg-warning">
-                <!-- conteúdo slide 1 -->
+            <div class="carousel-item active bg-warning slide1">
+                <div class="d-block w-100 h-100" style="background-image: url(./images/products/img17.png)"></div>
             </div>
-            <div class="carousel-item bg-dark">
-                <!-- conteúdo slide 2 -->
+            <div class="carousel-item bg-dark slide2">
+                <div class="d-block w-100" style="background-image: url(./images/products/img15.jpg)"></div>
             </div>
-            <div class="carousel-item bg-danger">
-                <!-- conteúdo slide 3 -->
+            <div class="carousel-item bg-danger slide3">
+                <div class="d-block w-100 h-100" style="background-image: url(./images/products/img16.jpg)"></div>
             </div>
         </div>
-        <!-- botão slide anterior -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#banner-carousel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button " data-bs-target="#banner-carousel " data-bs-slide="prev ">
+        <span class="carousel-control-prev-icon" aria-hidden="true "></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button class="carousel-control-next" type="button " data-bs-target="#banner-carousel " data-bs-slide="next ">
+        <span class="carousel-control-next-icon" aria-hidden="true "></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/products/img17.png" class="d-block slide-img" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="./images/products/img15.jpg" class="d-block slide-img" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="./images/products/img16.jpg" class="d-block slide-img" alt="..." />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-        <!-- botão slide próximo -->
-        <button class="carousel-control-next" type="button" data-bs-target="#banner-carousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
     <!-- Apresentação -->
-    <div class="container-fluid pt-5 pb-5" style="background-color: rgb(245, 245, 245);">
-        <div class="col-lg-9 mx-auto">
+    <div class="container-fluid pt-5 pb-5 bg-second" id="differentials " onload="isShowing() ">
+        <div class="col-lg-9 mx-auto" id="principles">
             <div class="row my-5">
-                <div class="col-lg-3 my-auto container-text mx-auto">
-                    <h1 class="text-uppercase my-3">Visão</h1>
-                    <p class="my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam laudantium vitae in explicabo totam quas quae reprehenderit. </p>
-                    <div class="text-end">
-                    </div>
+                <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
+                    <h1 class="text-uppercase text-center">Visão</h1>
+                    <p class="my-5">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam laudantium vitae in explicabo totam quas quae reprehenderit.
+                    </p>
+                    <div class="text-end"></div>
                 </div>
-                <div class="col-lg-3 my-auto container-text mx-auto">
-                    <h1 class="text-uppercase my-3">Missão</h1>
-                    <p class="my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam laudantium vitae in explicabo totam quas quae reprehenderit. </p>
-                    <div class="text-end">
-                        B </div>
+                <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
+                    <h1 class="text-uppercase text-center">Missão</h1>
+                    <p class="my-5">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam laudantium vitae in explicabo totam quas quae reprehenderit.
+                    </p>
                 </div>
-                <div class="col-lg-3 my-auto container-text mx-auto">
-                    <h1 class="text-uppercase my-3">Valores</h1>
-                    <p class="my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam laudantium vitae in explicabo totam quas quae reprehenderit. </p>
+                <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
+                    <h1 class="text-uppercase text-center">Valores</h1>
+                    <p class="my-5">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente veniam laudantium vitae in explicabo totam quas quae reprehenderit.
+                    </p>
                     <div class="col-lg-12 container-text text-end">
-                        <a class="a-home" href="pages/about.html">Saiba mais</a>
-                    </div>
-                </div>
+                        <a class="a-home text-first" href="pages/about.html ">Saiba mais</a
+              >
             </div>
-            <div class="row my-5 px-3">
-                <div class="col-lg-10 container-text mx-auto">
-                    <h1 class="text-uppercase my-3 text-center"> Nosso diferencial</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iste repudiandae blanditiis porro, ipsa explicabo doloremque excepturi at officia repellendus magni ipsum delectus sunt commodi, dicta temporibus aspernatur, quis quidem?</p>
-                </div>
-            </div>
-
-
+          </div>
         </div>
+        <hr class="mx-auto" style="height: 2px" />
+
+        <div class="row my-5 px-3">
+          <div class="col-lg-9 container-text mx-auto isntShowing">
+            <h1 class="text-uppercase my-3 text-center">Nosso diferencial</h1>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              iste repudiandae blanditiis porro, ipsa explicabo doloremque
+              excepturi at officia repellendus magni ipsum delectus sunt
+              commodi, dicta temporibus aspernatur, quis quidem?
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Galeria -->
-    <div class="container-fluid pt-5 pb-5" style="background-color: #e9ecef">
-        <div class="col-lg-10 mx-auto">
-            <div class="galery">
-                <div class="row text-center">
-                    <h1 class="col-lg-12 text-uppercase">Galeria</h1>
-                    <p class="text-justify container-text py-4  px-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, in aperiam itaque accusantium, quas soluta sunt ad, quaerat harum deleniti qui! Ipsa voluptatum rem repellat exercitationem dolor similique eius! Nostrum.</p>
-                </div>
-                <div class="row photos-row">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                </div>
-                <div class="row photos-row">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                </div>
-                <div class="row photos-row">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-                    <img class="col-lg-3 mx-auto my-5 photos" data-src="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+    <div class="container-fluid pt-5 pb-5 bg-third text-second">
+      <div class="col-lg-9 mx-auto">
+        <div class="galery">
+          <div class="row text-center px-3 py-5">
+            <h1 class="col-lg-12 text-uppercase">Galeria</h1>
+            <a
+              class="
+                text-center
+                container-text
+                pb-4
+                px-0
+                text-second text-decoration-none
+                galery-link
+              "
+              href="pages/products.html "
+            >
+              Acesse nosso catálogo
+            </a>
+                        <p class="container-text col-lg-9 mx-auto pt-5">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, in aperiam itaque accusantium, quas soluta sunt ad, quaerat harum deleniti qui! Ipsa voluptatum rem repellat exercitationem dolor similique eius! Nostrum.
+                        </p>
+                    </div>
+                    <div class="row photos-row-home mx-auto">
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img9.png" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img2.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img10.png" alt=" " />
+                    </div>
+                    <div class="row photos-row-home mx-auto">
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img4.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img5.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img7.jpg" alt=" " />
+                    </div>
+                    <div class="row photos-row-home mx-auto">
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img3.jpeg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img8.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img1.jpg" alt=" " />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contato -->
-    <div class="container-fluid p-0 contact" style="background-color: #6c757d">
-        <div class="col-lg-9 mx-auto h-100">
-            <div class="row h-100">
-                <div class="col-lg-6 py-5">
-                    <h1 class="text-uppercase">Contato</h1>
-                    <ul class="ps-0">
-                        <li class="contact-li">(12) 3456-7891</li>
-                        <li class="contact-li">
-                            <a href="mailto:contato@gmail.com" class="text-decoration-none contact contact-a">contato@gmail.com</a> </li>
-                        <li class="contact-li">Rua, Bairro, Cidade, Estado</li>
-                        <li class="contact-li mb-0">
-                            <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x pe-5 contact contact-a"></i></a><a href="https://www.facebook.com"><i class=" fab fa-facebook-square fa-2x contact contact-a"></i></a></li>
-                    </ul>
+        <!-- Contato -->
+        <div class="container-fluid p-0 contact bg-fifth">
+            <div class="col-lg-9 mx-auto h-100">
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-lg-5 py-5">
+                        <h1 class="text-uppercase">Contato</h1>
+                        <ul class="ps-0">
+                            <li class="contact-li">(12) 3456-7891</li>
+                            <li class="contact-li">
+                                <a href="mailto:contato@gmail.com " class="text-decoration-none contact contact-a">contato@gmail.com</a
+                >
+              </li>
+              <li class="contact-li">Rua, Bairro, Cidade, Estado</li>
+              <li class="contact-li mb-0">
+                <a href="https://www.instagram.com/ "
+                  ><i
+                    class="fab fa-instagram fa-2x pe-5 contact contact-a"
+                  ></i></a
+                ><a href="https://www.facebook.com "
+                  ><i class="fab fa-facebook-square fa-2x contact contact-a"></i
+                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <iframe class="m-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17926.394619000454!2d-122.08953712096803!3d37.41421235486433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDI1JzE4LjUiTiAxMjLCsDA1JzAyLjQiVw!5e0!3m2!1sen!2sbr!4v1631055237950!5m2!1sen!2sbr "
+                            width="100% " height="100% " style="border: 0" allowfullscreen=" " loading="lazy "></iframe>
+                    </div>
                 </div>
-                <div class="col-lg-6 p-0"><iframe class="m-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17926.394619000454!2d-122.08953712096803!3d37.41421235486433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDI1JzE4LjUiTiAxMjLCsDA1JzAyLjQiVw!5e0!3m2!1sen!2sbr!4v1631055237950!5m2!1sen!2sbr "
-                        width="100%" height="100%" style="border:0; " allowfullscreen=" " loading="lazy "></iframe></div>
             </div>
         </div>
-    </div>
 </body>
+<script src="js/isShowing.js"></script>
 
 <script>
     function scrollChecker() {
-        document.querySelectorAll('img').forEach((img, index) => {
+        document.querySelectorAll(".img-scroll").forEach((img, index) => {
             if (img.getBoundingClientRect().top < window.innerHeight) {
-                img.src = img.getAttribute('data-src')
+                img.src = img.getAttribute("data-src");
             }
-        })
+        });
     }
 
-    window.addEventListener('scroll', scrollChecker)
+    window.addEventListener("scroll", scrollChecker);
 </script>
 
 </html>
