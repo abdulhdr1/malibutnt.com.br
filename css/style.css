@@ -159,6 +159,10 @@ h1 {
     height: 70vh;
 }
 
+.slide-img:hover {
+    transform: scale(1);
+}
+
 .carousel-item {
     background-position: center;
     background-size: cover;
