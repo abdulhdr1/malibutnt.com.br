@@ -197,7 +197,7 @@ h1 {
 }
 
 .slide-1 {
-    filter: blur(3px);
+    filter: blur(2px);
 }
 
 .slide-img:hover {
