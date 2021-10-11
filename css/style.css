@@ -200,6 +200,10 @@ h1 {
     filter: blur(2px);
 }
 
+.slide-img.slide-3 {
+    object-fit: fill;
+}
+
 .slide-img:hover {
     transform: scale(1);
 }
