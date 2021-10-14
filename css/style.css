@@ -277,6 +277,9 @@ a .non-galery-img {
         display: block;
         text-align: center;
     }
+    #slider {
+        display: none;
+    }
     .navbar {
         min-height: 10vh;
         width: 100%;
