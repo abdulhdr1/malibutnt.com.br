@@ -268,6 +268,14 @@ a .non-galery-img {
   height: 60px;
 }
 
+.btn.btn-primary {
+  display: none;
+}
+
+.multi-collapse .collapse {
+  display: block;
+}
+
 @media (max-width: 992px) {
   .photos {
     width: 100%;
@@ -286,6 +294,9 @@ a .non-galery-img {
   #principles .row .col-lg-3.isntShowing {
     transform: translateY(0);
     opacity: 1;
+  }
+  #catalog {
+    margin-top: 2rem;
   }
   .navbar {
     min-height: 10vh;
@@ -340,7 +351,7 @@ a .non-galery-img {
     width: 80%;
   }
   .products-text {
-    padding: 28px 64px;
+    padding: 28px;
     text-align: center;
   }
   .contact {
@@ -385,7 +396,7 @@ a .non-galery-img {
     overflow: hidden;
   }
   .container-fluid {
-    padding: 28px 12px !important;
+    padding: 28px 12px 0 !important;
   }
   .container-fluid .text-third .row {
     margin: 0 !important;
@@ -393,6 +404,28 @@ a .non-galery-img {
   .container-fluid .text-third .row h1 {
     margin: 0 !important;
     padding-bottom: 28px !important;
+  }
+  .products-text.container-text.py-5 {
+    padding-bottom: 0 !important;
+  }
+  .row.text-center .galery .row.bg-second {
+    padding-top: 0 !important;
+  }
+  .btn.btn-primary {
+    display: block;
+  }
+
+  .multi-collapse.collapse {
+    display: none;
+  }
+  .multi-collapse.collapse.show {
+    display: block;
+  }
+  #colors .row .col-lg-3 {
+    padding: 0;
+  }
+  #colors .row .col-lg-3 ul {
+    padding: 0;
   }
 }
 
