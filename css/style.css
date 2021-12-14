@@ -276,6 +276,10 @@ a .non-galery-img {
   display: block;
 }
 
+.collapse:not(.show) {
+  display: block;
+}
+
 @media (max-width: 992px) {
   .photos {
     width: 100%;
