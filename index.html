@@ -1,156 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Malibu - TNT</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="icon" href="/images/icons/icon_logo.png" type="image/x-icon" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-second">
-      <div class="navbar-content container-fluid w-75">
-        <!-- logomarca  -->
-        <a href="#">
-          <img
-            class="navbar-brand non-galery-img"
-            src="./images/logo-malibu.png"
-            alt="logo"
-            loading="eager"
-          />
-        </a>
-        <button
-          class="navbar-toggler me-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-options"
-          aria-controls="navbar-options"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <div class="navbar-content container-fluid w-75">
+            <!-- logomarca  -->
+            <a href="#">
+                <img class="navbar-brand non-galery-img" src="./images/logo-malibu.png" alt="logo" loading="eager" />
+            </a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-options" aria-controls="navbar-options" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon d-flex"
             ><i class="fas fa-bars fa-lg my-auto mx-auto"></i
           ></span>
         </button>
-        <!-- itens do menu de navegação -->
-        <div class="collapse navbar-collapse" id="navbar-options">
-          <ul class="navbar-nav my-auto ms-auto">
-            <li class="nav-item mx-3 d-flex justify-content-between">
-              <a href="pages/about.html" class="nav-link text-uppercase"
-                >Sobre nós
+            <!-- itens do menu de navegação -->
+            <div class="collapse navbar-collapse" id="navbar-options">
+                <ul class="navbar-nav my-auto ms-auto">
+                    <li class="nav-item mx-3 d-flex justify-content-between">
+                        <a href="pages/about.html" class="nav-link text-uppercase">Sobre nós
                 <i class="fas fa-building ps-3"></i>
               </a>
-            </li>
-            <hr class="navbar-hr" />
-            <li class="nav-item mx-3 d-flex justify-content-between">
-              <a href="pages/products.html " class="nav-link text-uppercase"
-                >Produtos
+                    </li>
+                    <hr class="navbar-hr" />
+                    <li class="nav-item mx-3 d-flex justify-content-between">
+                        <a href="pages/products.html " class="nav-link text-uppercase">Produtos
                 <i class="fas fa-th ps-3"></i>
               </a>
-            </li>
-          </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <div id="slider" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="./images/products/img16.jpg"
-            class="d-block slide-img"
-            alt="..."
-          />
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/products/img16.jpg" class="d-block slide-img" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="./images/products/img17.jpg" class="d-block slide-img" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="./images/products/img2.jpg" class="d-block slide-img slide-3" alt="..." />
+            </div>
         </div>
-        <div class="carousel-item">
-          <img
-            src="./images/products/img17.jpg"
-            class="d-block slide-img"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./images/products/img2.jpg"
-            class="d-block slide-img slide-3"
-            alt="..."
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#slider"
-        data-bs-slide="prev"
-      >
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#slider"
-        data-bs-slide="next"
-      >
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
     <!-- Apresentação -->
-    <div
-      class="container-fluid pt-5 pb-5 bg-second"
-      id="differentials "
-      onload="isShowing() "
-    >
-      <div class="col-lg-9 mx-auto" id="principles">
-        <div class="row my-5">
-          <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
-            <h1 class="text-uppercase text-center">Visão</h1>
-            <p class="my-5">Garantir acesso à Não Tecidos de alta qualidade</p>
-            <div class="text-end"></div>
-          </div>
-          <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
-            <h1 class="text-uppercase text-center">Missão</h1>
-            <p class="my-5">
-              Atender nossos clientes com produtos de elevado padrão de
-              qualidade e consistência, garantindo sua satisfação
-            </p>
-          </div>
-          <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
-            <h1 class="text-uppercase text-center">Valores</h1>
-            <p class="my-5 text-center">
-              Qualidade <br />
-              Eficiência <br />
-              Atendimento
-            </p>
-            <div class="col-lg-12 container-text text-end">
-              <a class="a-home text-first" href="pages/about.html "
-                >Saiba mais</a
+    <div class="container-fluid pt-5 pb-5 bg-second" id="differentials " onload="isShowing() ">
+        <div class="col-lg-6 mx-auto" id="principles">
+            <div class="row my-5">
+                <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
+                    <h1 class="text-uppercase text-center">Visão</h1>
+                    <p class="my-5">Garantir acesso à Não Tecidos de alta qualidade</p>
+                    <div class="text-end"></div>
+                </div>
+                <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
+                    <h1 class="text-uppercase text-center">Missão</h1>
+                    <p class="my-5">
+                        Atender nossos clientes com produtos de elevado padrão de qualidade e consistência, garantindo sua satisfação
+                    </p>
+                </div>
+                <div class="col-lg-3 mb-auto container-text mx-auto isntShowing">
+                    <h1 class="text-uppercase text-center">Valores</h1>
+                    <p class="my-5 text-center">
+                        Qualidade <br /> Eficiência <br /> Atendimento
+                    </p>
+                    <div class="col-lg-12 container-text text-end">
+                        <a class="a-home text-first" href="pages/about.html ">Saiba mais</a
               >
             </div>
           </div>
@@ -158,7 +97,7 @@
         <hr class="mx-auto" style="height: 2px" />
 
         <div class="row my-5 px-3">
-          <div class="col-lg-9 container-text mx-auto isntShowing">
+          <div class="col-lg-6 container-text mx-auto isntShowing">
             <h1 class="text-uppercase my-3 text-center">Nosso diferencial</h1>
             <p class="mt-5">
               A MALIBU TNT se diferência através de nossos produtos de alta
@@ -171,139 +110,116 @@
     </div>
     <!-- Galeria -->
     <div class="container-fluid pt-5 pb-5 bg-third text-second">
-      <div class="col-lg-9 mx-auto">
+      <div class="col-lg-6 mx-auto">
         <div class="galery">
           <div class="row text-center px-3 py-5">
             <h1 class="col-lg-12 text-uppercase">Galeria</h1>
             <a
-              class="
-                text-center
-                container-text
-                pb-4
-                px-0
-                text-second text-decoration-none
-                galery-link
-              "
+              class="text-center container-text pb-4 px-0 text-second text-decoration-none galery-link"
               href="pages/products.html "
             >
               Acesse nosso catálogo
             </a>
-            <p class="container-text col-lg-9 mx-auto pt-2 text-center">
-              Não tecidos em diversas cores, larguras e gramaturas
-            </p>
-          </div>
-          <div class="row photos-row-home mx-auto">
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img19.jpg"
-              alt=" "
-            />
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img2.jpg"
-              alt=" "
-            />
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img10.png"
-              alt=" "
-            />
-          </div>
-          <div class="row photos-row-home mx-auto">
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img4.jpg"
-              alt=" "
-            />
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img5.jpg"
-              alt=" "
-            />
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img7.jpg"
-              alt=" "
-            />
-          </div>
-          <div class="row photos-row-home mx-auto">
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img3.jpeg"
-              alt=" "
-            />
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img8.jpg"
-              alt=" "
-            />
-            <img
-              class="col-lg-3 mx-auto photos py-5 img-scroll"
-              data-src="./images/products/img1.jpg"
-              alt=" "
-            />
-          </div>
+                        <p class="container-text col-lg-9 mx-auto pt-2 text-center">
+                            Não tecidos em diversas cores, larguras e gramaturas
+                        </p>
+                    </div>
+                    <div class="row photos-row-home mx-auto">
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img19.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img2.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img10.png" alt=" " />
+                    </div>
+                    <div class="row photos-row-home mx-auto">
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img4.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img5.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img7.jpg" alt=" " />
+                    </div>
+                    <div class="row photos-row-home mx-auto">
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img3.jpeg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img8.jpg" alt=" " />
+                        <img class="col-lg-3 mx-auto photos py-5 img-scroll" data-src="./images/products/img1.jpg" alt=" " />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="round-contact">
-      <a href="https://wa.me/5515998034993">
-        <i class="fab fa-whatsapp-square fa-3x contact contact-a"></i>
-      </a>
-    </div>
-    <!-- Contato -->
-    <div class="container-fluid p-0 contact bg-fifth">
-      <div class="col-lg-9 mx-auto h-100">
-        <div class="row h-100 d-flex justify-content-center text-center">
-          <div class="col-lg-5 py-5">
-            <h1 class="text-uppercase">Contato</h1>
-            <ul class="ps-0">
-              <li class="contact-li">
-                <a
-                  href="tel:551532859100"
-                  class="text-decoration-none contact contact-a"
-                  >+55 (15) 3285-9100</a
-                >
+        <div class="round-contact">
+            <a href="https://wa.me/5515998034993">
+                <i class="fab fa-whatsapp-square fa-3x contact contact-a"></i>
+            </a>
+        </div>
+        <!-- Contato -->
+        <div class="container-fluid p-0 contact bg-fifth">
+            <div class="col-lg-9 mx-auto h-100">
+                <div class="row h-100 d-flex justify-content-center text-center">
+                    <div class="col-lg-5 pt-5">
+                        <h1 class="text-uppercase contact-title">Contato</h1>
+                        <ul class="ps-0 d-flex justify-content-around">
+                            <li class="contact-li">
+                                <div>
+                                    <a href="tel:551532859100" class="text-decoration-none contact contact-a">+55 (15) 3285-9100</a
+                  >
+                </div>
                 <br />
-                <a
-                  href="tel:5515998034993"
-                  class="text-decoration-none contact contact-a"
-                  >+55 (15) 99803-4993
-                </a>
-              </li>
-              <li class="contact-li">
-                <a
-                  href="mailto:contato@malibutnt.com.br"
-                  class="text-decoration-none contact contact-a"
-                  >contato@malibutnt.com.br</a
-                >
-              </li>
-              <li class="contact-li mb-0">
-                <a href="https://www.instagram.com/malibu.tnt/"
-                  ><i
-                    class="fab fa-instagram fa-2x pe-5 contact contact-a"
-                  ></i></a
-                ><a href="https://wa.me/5515998034993"
-                  ><i class="fab fa-whatsapp-square fa-2x contact contact-a"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+                <div>
+                  <a
+                    href="tel:5515998034993"
+                    class="text-decoration-none contact contact-a"
+                    >+55 (15) 99803-4993
+                  </a>
+                                </div>
+                            </li>
+                            <li class="contact-li">
+                                <div>
+                                    <a href="mailto:contato@malibutnt.com.br" class="text-decoration-none contact contact-a">contato@malibutnt.com.br</a
+                  >
+                </div>
+                <br />
+                <div>
+                  <a href="https://www.instagram.com/malibu.tnt/"
+                    ><i
+                      class="fab fa-instagram fa-2x pe-5 contact contact-a"
+                    ></i></a
+                  ><a href="https://wa.me/5515998034993"
+                    ><i
+                      class="fab fa-whatsapp-square fa-2x contact contact-a"
+                    ></i
+                  ></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pt-2">
+                            <p id="copyright"></p>
+                            <!--<p id="creditos">
+                                Desenvolvido por
+                                <a href="https://www.linkedin.com/in/abdulhdr/">Abdul Haidar</a>
+                            </p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
-  <script src="js/isShowing.js"></script>
+</body>
+<script src="js/isShowing.js"></script>
 
-  <script>
+<script>
     function scrollChecker() {
-      document.querySelectorAll(".img-scroll").forEach((img, index) => {
-        if (img.getBoundingClientRect().top < window.innerHeight) {
-          img.src = img.getAttribute("data-src");
-        }
-      });
+        document.querySelectorAll(".img-scroll").forEach((img, index) => {
+            if (img.getBoundingClientRect().top < window.innerHeight) {
+                img.src = img.getAttribute("data-src");
+            }
+        });
     }
 
     window.addEventListener("scroll", scrollChecker);
-  </script>
+
+    function updateYear() {
+        let date = new Date();
+        let year = date.getFullYear();
+        let string = `Todos os direitos reservados Copyright © ${year} Malibu TNT`;
+
+        document.querySelector("#copyright").innerText = string;
+    }
+    updateYear();
+</script>
+
 </html>
